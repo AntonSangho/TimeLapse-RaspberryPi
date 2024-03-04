@@ -13,6 +13,7 @@
 
 **주의: 점퍼선 연결시 케이블을 제거하고 진행합니다.**
 
+
 ## 연결 작업 
 
 | [RaspberryPi GPIO](https://docs.arduino.cc/resources/pinouts/A000066-full-pinout.pdf) | LED |
@@ -26,6 +27,22 @@
 # 코드 다운로드 
 
     git clone https://
+
+# 운영체제 
+
+- 64bit Raspbian bookworm (Ver12) 
+
+## 운영체제 확인하는법
+터미널에서 아래와 같이 입력한다.
+```bash
+cat /etc/os-release
+```
+몇 비트인지 확인하는 법 
+```bash
+uname -m
+```
+
+
 
 ## 라이브러리  
 1. Library 
