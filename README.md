@@ -15,6 +15,18 @@
 
 
 ## 연결 작업 
+### USB camera
+USB 카메라를 연결한 후에 아래 명령어로 연결되어 있는 포트 확인  
+
+```bash
+lsusb
+```
+
+```bash
+v4l2-ctl --list-devices
+```
+
+### LED 
 
 | [RaspberryPi GPIO](https://docs.arduino.cc/resources/pinouts/A000066-full-pinout.pdf) | LED |
 |-----------|------|
@@ -42,14 +54,20 @@ cat /etc/os-release
 uname -m
 ```
 
+## 설치  
+1. fswebcam 
+
+## USB camera   
+
+```bash 
+sudo apt-get install fswebcam
+```
+## 쵤영하기 
+```bash 
+fswebcam -d /dev/video0 /[사진경로] 
+```
 
 
-## 라이브러리  
-1. Library 
-2. Search
-3. Install
-
-## 컴파일   
 
 1. open
 2. compile
