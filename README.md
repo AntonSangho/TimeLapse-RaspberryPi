@@ -1,4 +1,3 @@
-![img](https://www.google.com/url?sa=i&url=https%3A%2F%2Fpimylifeup.com%2Fraspberry-pi-webcam-server%2F&psig=AOvVaw2zzGrYDHttOLODOrH2HxHg&ust=1709618681878000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOCA5ob42YQDFQAAAAAdAAAAABAE)
 
 # 타임랩스 만들기 
 
