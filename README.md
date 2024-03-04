@@ -62,15 +62,15 @@ uname -m
 ```bash 
 sudo apt-get install fswebcam
 ```
-## 쵤영하기 
+## 촬영하기 
 ```bash 
 fswebcam -d /dev/video0 /[사진경로] 
 ```
 
-
-
-1. open
-2. compile
+## 10초에 한번씩 촬영하기
+```bash
+fswebcam -d /dev/video0 -l 10 test-%Y-%m-%d--%H-%M-%S.jpg
+```
 
 ## 업로드  
 1. upload
