@@ -53,6 +53,10 @@ fswebcam image.jpg
 
 ## 동작스크립트 작성하기
 1. webcam 폴더만들기
+```bash
+sudo mkdir ~/webcam
+cd ~/webcam
+```
 
 2. bash 스크립트 작성 
 ```bash
@@ -62,15 +66,29 @@ DATE=$(date +"%Y-%m-%d_%H%M")
 
 fswebcam -r 1280x720 --no-banner /home/pi/webcam/$DATE.jpg
 ```
-
-## 10초에 한번씩 촬영하기
-```bash
-fswebcam -d /dev/video0 -l 10 test-%Y-%m-%d--%H-%M-%S.jpg
+3. bash 스트립트 권한 설정 
+```bash 
+chmod +x webcam.sh
 ```
 
-## 업로드  
-1. upload
+## 자동으로 촬영하기
+1. 스케줄 관리 실행 
+```bash
+crontab -e 
+```
+2. 30분 마다 스크립트를 실행하도록 내용 추가
+```bash
+* * * * * /home/pi/webcam.sh 2>&1
+```
+소
+## 저장된 사진 가져오기 (미확정)   
+1. SSH를 통해서 가져오기 
+```bash
+sudo scp pi@[ip주소]:/home/pi/webcam/[파일명] /[다운로드 받을 경로]
+```
 
+## 사진 여러개를 동영상을 만들기
+1. 파이썬으로 구현 
 
 # 라이센스 
 [GPL 3.0](https://olis.or.kr/license/Detailselect.do?lId=1072&mapCode=010072)
