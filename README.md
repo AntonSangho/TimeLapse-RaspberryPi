@@ -1,3 +1,4 @@
+![img](https://pimylifeup.com/wp-content/uploads/2015/02/Raspberry-Pi-Webcam-Server-V1.jpg)
 
 # 타임랩스 만들기  
 
